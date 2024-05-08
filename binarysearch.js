@@ -5,13 +5,13 @@ let search = (arr, element, start, end) => {
     let mid = (start + end) / 2;
 
     if (arr[mid] === element) {
-        return mid; // Element found at mid index
+        return mid;
     } else if (arr[mid] > element) {
-        return search(arr, element, start, mid - 1); // Search left half
+        return search(arr, element, start, mid - 1);
     } else {
-        return search(arr, element, mid + 1, end); // Search right half
+        return search(arr, element, mid + 1, end);
     }
 }
 
-let res = search(arr, 3, 0, arr.length - 1);
-console.log(res); // Output: 2 (index of element 3 in the array)
+let res = search(arr, 1, 0, arr.length);
+console.log(res);

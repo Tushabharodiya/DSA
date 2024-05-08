@@ -73,7 +73,7 @@
 
 
 class stackOver {
-    constructor(stack, size) {
+    constructor() {
         this.stack = []
         this.size = 5;
     }
